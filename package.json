@@ -1,0 +1,54 @@
+{
+  "name": "blank-invoice-maker-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Blank Invoice Maker — create free, no-signup invoices from your AI assistant. Exposes list_templates and create_invoice tools that return a deep link opening blankinvoicemaker.com pre-filled.",
+  "type": "module",
+  "bin": {
+    "blank-invoice-maker-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test dist/invoice.test.js",
+    "generate:templates": "node --experimental-strip-types scripts/generate-templates.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "invoice",
+    "invoice-generator",
+    "invoice-template",
+    "claude",
+    "ai-tools",
+    "blank-invoice-maker"
+  ],
+  "homepage": "https://blankinvoicemaker.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InnarM/blank-invoice-maker-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InnarM/blank-invoice-maker-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Blank Invoice Maker (https://blankinvoicemaker.com)",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "lz-string": "^1.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
