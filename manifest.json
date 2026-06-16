@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "blank-invoice-maker",
+  "display_name": "Blank Invoice Maker",
+  "version": "1.0.2",
+  "description": "Create free, no-signup invoices from your AI assistant.",
+  "long_description": "An MCP server for Blank Invoice Maker, the free no-signup invoice generator. Describe an invoice in plain language and `create_invoice` returns a link that opens blankinvoicemaker.com fully pre-filled, ready to download as a watermark-free PDF. `list_templates` lists the available industry templates. Invoice data stays in your browser — the details travel in the link's URL fragment and are never sent to a server.",
+  "author": {
+    "name": "Blank Invoice Maker",
+    "url": "https://blankinvoicemaker.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InnarM/blank-invoice-maker-mcp"
+  },
+  "homepage": "https://blankinvoicemaker.com",
+  "documentation": "https://github.com/InnarM/blank-invoice-maker-mcp",
+  "support": "https://github.com/InnarM/blank-invoice-maker-mcp/issues",
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"]
+    }
+  },
+  "tools": [
+    { "name": "list_templates", "description": "List the available invoice templates on Blank Invoice Maker" },
+    { "name": "create_invoice", "description": "Build an invoice and return a pre-filled blankinvoicemaker.com link" }
+  ],
+  "keywords": ["invoice", "invoice-generator", "finance", "productivity", "pdf", "freelance", "mcp"],
+  "license": "MIT",
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": { "node": ">=18.0.0" }
+  }
+}

@@ -1,0 +1,8 @@
+src/
+*.test.js
+tsconfig.json
+.git/
+.gitignore
+server.json
+*.tgz
+*.mcpb
