@@ -1,7 +1,7 @@
 {
   "name": "blank-invoice-maker-mcp",
-  "version": "1.0.1",
-  "mcpName": "io.github.innarm/blank-invoice-maker",
+  "version": "1.0.2",
+  "mcpName": "io.github.InnarM/blank-invoice-maker",
   "description": "MCP server for Blank Invoice Maker — create free, no-signup invoices from your AI assistant. Exposes list_templates and create_invoice tools that return a deep link opening blankinvoicemaker.com pre-filled.",
   "type": "module",
   "bin": {

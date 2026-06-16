@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.innarm/blank-invoice-maker",
+  "name": "io.github.InnarM/blank-invoice-maker",
   "description": "Create free invoices from your AI assistant via a pre-filled blankinvoicemaker.com link.",
   "repository": {
     "url": "https://github.com/InnarM/blank-invoice-maker-mcp",
     "source": "github"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "blank-invoice-maker-mcp",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "transport": {
         "type": "stdio"
       }
